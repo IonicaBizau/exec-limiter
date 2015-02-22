@@ -2,7 +2,6 @@
 Limit the shell execution commands to **<x>** calls same time.
 
 ## Installation
-Run the following commands to download and install the application:
 
 ```sh
 $ npm install -g exec-limiter
