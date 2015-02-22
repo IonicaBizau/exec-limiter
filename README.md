@@ -12,7 +12,7 @@ $ npm install -g exec-limiter
 
 ```js
 // Dependencies
-var ExecLimiter = require("../lib");
+var ExecLimiter = require("exec-limiter");
 
 // Constants
 const COMMAND = "sleep 5; date;";
