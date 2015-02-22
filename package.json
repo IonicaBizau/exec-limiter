@@ -1,0 +1,31 @@
+{
+  "name": "exec-limiter",
+  "version": "1.0.0",
+  "description": "Limit the shell execution commands to <x> calls same time.",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "limit-it": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:IonicaBizau/node-exec-limiter.git"
+  },
+  "keywords": [
+    "exec",
+    "limiter",
+    "shell"
+  ],
+  "author": "Ionică Bizău <bizauionica@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IonicaBizau/node-exec-limiter/issues"
+  },
+  "homepage": "https://github.com/IonicaBizau/node-exec-limiter"
+}
