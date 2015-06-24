@@ -43,6 +43,28 @@ describe("ExecLimiter", function() {
                 });
             });
         });
+
+        describe("environment", function() {
+            // all tests must finish in less than 4 seconds
+            this.timeout(4000);
+
+            var name = "TEST_VAR";
+            var value = "test_value";
+            var command = "printenv";
+
+            it("spawn: " + command + " - should not return an error if variables are passed correctly", function(done) {
+                var env = {};
+                env[name] = value;
+
+                el.add(command, [name], { env: env }, done);
+            });
+
+            it("exec: " + command + " - should not return an error if variables are passed correctly", function(done) {
+                var env = {};
+                env[name] = value;
+
+                el.add(command + " " + name, { env: env }, done);
+            });
+        });
     });
 });
-
