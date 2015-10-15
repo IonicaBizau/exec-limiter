@@ -44,7 +44,6 @@ for (; i < 30; ++i) {
         console.log((++c) + "> " + stdout);
     });
 }
-
 ```
 
 ## Documentation
@@ -58,12 +57,13 @@ Creates a new instance of `ExecLimiter`.
 #### Return
 - **ExecLimiter** The `ExecLimiter` instance.
 
-### `add(command, options, callback)`
+### `add(command, args, options, callback)`
 Adds a new command to run in the buffer.
 
 #### Params
-- **String** `command`: The command to run.
-- **Object** `options`: The options to pass to the exec function.
+- **String** `command`: The command to run as string.
+- **Object** `args`: The command arguments as array of strings (optional).
+- **Object** `options`: The options to pass to the exec/spawn function (optional).
 - **Function** `callback`: The callback function.
 
 #### Return
@@ -71,6 +71,9 @@ Adds a new command to run in the buffer.
 
 ## How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
+
+## Who uses this
+If you are using this library in one of your projects, add it in this list. :sparkles:
 
 ## License
 [KINDLY][license] © [Ionică Bizău][website]–The [LICENSE](/LICENSE) file contains
@@ -81,4 +84,4 @@ a copy of the license.
 [website]: http://ionicabizau.net
 [docs]: /DOCUMENTATION.md
 [paypal-donations]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MG98D7NPFZ3MG
-[donate-now]: http://i.imgur.com/jioicaN.png
+[donate-now]: http://i.imgur.com/6cMbHOC.png
