@@ -4,15 +4,15 @@
   "description": "Limit the shell execution commands to <x> calls same time.",
   "main": "lib/index.js",
   "directories": {
-    "example": "example"
+    "example": "example",
+    "test": "test"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "mocha test"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:IonicaBizau/node-exec-limiter.git"
+    "url": "git+ssh://git@github.com/IonicaBizau/node-exec-limiter.git"
   },
   "keywords": [
     "exec",
@@ -30,6 +30,9 @@
   "homepage": "https://github.com/IonicaBizau/node-exec-limiter",
   "dependencies": {
     "limit-it": "^3.0.0",
-    "typpy": "^2.0.0"
+    "typpy": "^2.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.3"
   }
 }
