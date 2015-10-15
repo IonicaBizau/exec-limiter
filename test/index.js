@@ -18,7 +18,7 @@ describe("errors", function () {
     });
 });
 
-describe("exec vs. spawn", function() {
+describe("exec vs. spawn", function () {
     // All tests must finish in less than 4 seconds
     this.timeout(4000);
 
@@ -26,24 +26,24 @@ describe("exec vs. spawn", function() {
       , command = "sleep"
       ;
 
-    it("spawn: " + command + " " + tts + " - should wait at least " + tts + " seconds before it finishes", function(done) {
+    it("spawn: " + command + " " + tts + " - should wait at least " + tts + " seconds before it finishes", function (done) {
         var start = Date.now();
-        el.add(command, [tts], function(err) {
+        el.add(command, [tts], function (err) {
             var end = Date.now();
             done(end - start < tts * 1000 ? "did not finish in more than " + tts + " seconds" : undefined);
         });
     });
 
-    it("exec: " + command + " " + tts + " - should wait at least " + tts + " seconds before it finishes", function(done) {
+    it("exec: " + command + " " + tts + " - should wait at least " + tts + " seconds before it finishes", function (done) {
         var start = Date.now();
-        el.add(command + " " + tts, function(err) {
+        el.add(command + " " + tts, function (err) {
             var end = Date.now();
             done(end - start < tts * 1000 ? "did not finish in more than " + tts + " seconds" : undefined);
         });
     });
 });
 
-describe("environment", function() {
+describe("environment", function () {
 
     // All tests must finish in less than 4 seconds
     this.timeout(4000);
@@ -53,13 +53,13 @@ describe("environment", function() {
       , command = "printenv"
       ;
 
-    it("spawn: " + command + " - should not return an error if variables are passed correctly", function(done) {
+    it("spawn: " + command + " - should not return an error if variables are passed correctly", function (done) {
         var env = {};
         env[name] = value;
         el.add(command, [name], { env: env }, done);
     });
 
-    it("exec: " + command + " - should not return an error if variables are passed correctly", function(done) {
+    it("exec: " + command + " - should not return an error if variables are passed correctly", function (done) {
         var env = {};
         env[name] = value;
         el.add(command + " " + name, { env: env }, done);
