@@ -50,12 +50,19 @@ el.add("sleep 5", function (err) {
     console.log(err || "I was ran in parallel with the second process and finished fine.");
 });
 
+// #4
+el.add("ls", ["-l"], { ignoreStdout: false }, function (err, stdout) {
+    console.log(err || "The spawned 'ls -l' returned:\n" + stdout);
+});
+
 // These will be executed like below:
 //
-// Timeline: 0-1-2-3-4-5-6-7-8-9-10
+// Timeline: 0-1-2-3-4-5-6-7-8-9-10-11
+//
 //       #1: ==========
 //       #2: ==============
 //       #3:            ============
+//       #4:               ==
 //
 // Notice how they run in parallel, but not more than 2 in the same time.
 ```
@@ -74,10 +81,20 @@ Creates a new instance of `ExecLimiter`.
 ### `add(command, args, options, callback)`
 Adds a new command to run in the buffer.
 
+Usage:
+
+```js
+el.add(command, fn); // exec
+el.add(command, args, fn); // spawn
+el.add(command, options, fn); // exec
+el.add(command, args, options, fn); // spawn
+```
+
 #### Params
 - **String** `command`: The command to run as string.
 - **Object** `args`: The command arguments as array of strings (optional).
-- **Object** `options`: The options to pass to the exec/spawn function (optional).
+- **Object** `options`: The options passed to the spawn/exec function, but extended with the following fields:
+ - `ignoreStdout` (Boolean): If `false`, then the stdout output will be stored ant called back.
 - **Function** `callback`: The callback function.
 
 #### Return
