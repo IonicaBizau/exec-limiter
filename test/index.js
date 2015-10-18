@@ -18,6 +18,31 @@ describe("errors", function () {
     });
 });
 
+describe("stdout", function () {
+    var command = "ls";
+
+    it("spawn: " + command + " - should not have stdout by default", function (done) {
+        el.add(command, [], function (err, stdout) {
+            assert.equal(stdout, "");
+            done(err);
+        });
+    });
+
+    it("spawn: " + command + " - should have stdout by default", function (done) {
+        el.add(command, [], { ignoreStdout: false }, function (err, stdout) {
+            assert.notEqual(stdout, "");
+            done(err);
+        });
+    });
+
+    it("exec: " + command + " - should have stdout", function (done) {
+        el.add(command, function (err, stdout) {
+            assert.equal(typeof stdout, "string");
+            done(err);
+        });
+    });
+});
+
 describe("exec vs. spawn", function () {
     // All tests must finish in less than 4 seconds
     this.timeout(4000);
