@@ -106,6 +106,14 @@ Have an idea? Found a bug? See [how to contribute][contributing].
 ## Who uses this
 If you are using this library in one of your projects, add it in this list. :sparkles:
 
+ - [`engine-tools`](https://github.com/jillix/engine-tools) by jillix 
+
+ - [`gpm`](https://github.com/IonicaBizau/node-gpm)
+
+ - [`gry`](https://github.com/IonicaBizau/node-gry)
+
+ - [`npmreserve`](https://github.com/IonicaBizau/npmreserve)
+
 ## License
 [KINDLY][license] © [Ionică Bizău][website]–The [LICENSE](/LICENSE) file contains
 a copy of the license.
