@@ -1,6 +1,6 @@
 {
   "name": "exec-limiter",
-  "version": "3.2.1",
+  "version": "3.2.2",
   "description": "Limit the shell execution commands to <x> calls same time.",
   "main": "lib/index.js",
   "directories": {
@@ -34,5 +34,16 @@
   },
   "devDependencies": {
     "mocha": "^2.3.3"
-  }
+  },
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "resources/",
+    "menu/",
+    "cli.js",
+    "index.js"
+  ]
 }
