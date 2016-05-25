@@ -1,5 +1,7 @@
 
-# exec-limiter [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Travis](https://img.shields.io/travis/IonicaBizau/node-exec-limiter.svg)](https://travis-ci.org/IonicaBizau/node-exec-limiter/) [![Version](https://img.shields.io/npm/v/exec-limiter.svg)](https://www.npmjs.com/package/exec-limiter) [![Downloads](https://img.shields.io/npm/dt/exec-limiter.svg)](https://www.npmjs.com/package/exec-limiter) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
+# exec-limiter
+
+ [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![AMA](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Travis](https://img.shields.io/travis/IonicaBizau/node-exec-limiter.svg)](https://travis-ci.org/IonicaBizau/node-exec-limiter/) [![Version](https://img.shields.io/npm/v/exec-limiter.svg)](https://www.npmjs.com/package/exec-limiter) [![Downloads](https://img.shields.io/npm/dt/exec-limiter.svg)](https://www.npmjs.com/package/exec-limiter) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
 > Limit the shell execution commands to <x> calls same time.
 
@@ -95,6 +97,15 @@ el.add(command, args, options, fn); // spawn
 ## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
+## :dizzy: Where is this library used?
+If you are using this library in one of your projects, add it in this list. :sparkles:
+
+
+ - [`engine-tools`](https://github.com/jillix/engine-tools) (by jillix)—Engine Tools library and CLI app.
+ - [`git-stat`](https://github.com/maxdeviant/git-stat#readme) (by Marshall Bowers)—Statistic generation for Git.
+ - [`gpm`](https://github.com/IonicaBizau/gpm)—npm + git = gpm - Install NPM packages and dependencies from git repositories.
+ - [`gry`](https://github.com/IonicaBizau/node-gry)—A minimalist NodeJS wrapper for the `git` commands. `gry` stands for the Git RepositorY.
+ - [`npmreserve`](https://github.com/IonicaBizau/npmreserve)—Reserve package names on NPM.
 
 ## :scroll: License
 
