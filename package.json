@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/IonicaBizau/node-exec-limiter.git"
+    "url": "git+ssh://git@github.com/IonicaBizau/exec-limiter.git"
   },
   "keywords": [
     "exec",
@@ -25,9 +25,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/IonicaBizau/node-exec-limiter/issues"
+    "url": "https://github.com/IonicaBizau/exec-limiter/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/node-exec-limiter",
+  "homepage": "https://github.com/IonicaBizau/exec-limiter",
   "dependencies": {
     "limit-it": "^3.0.0",
     "typpy": "^2.1.0"
@@ -47,5 +47,8 @@
     "scripts/",
     "cli.js",
     "index.js"
-  ]
+  ],
+  "blah": {
+    "cli": "exec-limiter-cli"
+  }
 }
