@@ -1,6 +1,6 @@
 {
   "name": "exec-limiter",
-  "version": "3.2.6",
+  "version": "3.2.7",
   "description": "Limit the shell execution commands to <x> calls same time.",
   "main": "lib/index.js",
   "directories": {
@@ -19,7 +19,7 @@
     "limiter",
     "shell"
   ],
-  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
   "contributors": [
     "Gabriel Petrovay <gabipetrovay@gmail.com>"
   ],
@@ -39,12 +39,11 @@
     "bin/",
     "app/",
     "lib/",
-    "build/",
     "dist/",
     "src/",
+    "scripts/",
     "resources/",
     "menu/",
-    "scripts/",
     "cli.js",
     "index.js"
   ],
