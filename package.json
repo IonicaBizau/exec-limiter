@@ -1,6 +1,6 @@
 {
   "name": "exec-limiter",
-  "version": "3.2.7",
+  "version": "3.2.8",
   "description": "Limit the shell execution commands to <x> calls same time.",
   "main": "lib/index.js",
   "directories": {
