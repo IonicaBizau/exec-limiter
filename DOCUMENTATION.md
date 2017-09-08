@@ -6,6 +6,7 @@ You can see below the API reference of this module.
 Creates a new instance of `ExecLimiter`.
 
 #### Params
+
 - **Number** `limit`: The limit of commands to run same time.
 
 #### Return
@@ -24,6 +25,7 @@ el.add(command, args, options, fn); // spawn
 ```
 
 #### Params
+
 - **String** `command`: The command to run as string.
 - **Object** `args`: The command arguments as array of strings (optional).
 - **Object** `options`: The options passed to the spawn/exec function, but extended with the following fields:
