@@ -10,7 +10,11 @@
 ## :cloud: Installation
 
 ```sh
-$ npm i --save exec-limiter
+# Using npm
+npm install --save exec-limiter
+
+# Using yarn
+yarn add exec-limiter
 ```
 
 
