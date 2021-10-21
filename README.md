@@ -251,7 +251,7 @@ If you are using this library in one of your projects, add it in this list. :spa
 
 ## :scroll: License
 
-[MIT][license] © [Ionică Bizău][website]
+<a href="https://github.com/IonicaBizau/exec-limiter/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/IonicaBizau/exec-limiter?style=for-the-badge"></a> © [Ionică Bizău][website]
 
 
 
