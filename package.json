@@ -1,6 +1,6 @@
 {
   "name": "exec-limiter",
-  "version": "3.2.13",
+  "version": "3.2.14",
   "description": "Limit the shell execution commands to <x> calls same time.",
   "main": "lib/index.js",
   "directories": {
@@ -46,6 +46,8 @@
     "menu/",
     "cli.js",
     "index.js",
+    "index.d.ts",
+    "package-lock.json",
     "bloggify.js",
     "bloggify.json",
     "bloggify/"
